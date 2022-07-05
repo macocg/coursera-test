@@ -5,12 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WIDGET MANUAL</title>
     <style>
+        body{
+            background-color: #22C7B3;
+        }
         h1{
             color: green;
             text-align: center;
         }
         div{
             text-align: center;
+            color: blue;
         }
     </style>
 </head>
@@ -18,6 +22,20 @@
     <h1>SELECCIONA TU MANUAL</h1>
     <div>
     <img src="samsung.png" alt="logo" width="300" height="129">
+    </div>
+    <div>
+    <form action="/action_page.js" method="get">
+        <label for="busquedamodelos">Selecciona el equipo:</label>
+        <input type="search" name="busquedamodelos" list="busquedamodelo" id="busquedamodelos">
+    <datalist id="busquedamodelo">
+        <option value="Televisor">
+        <option value="Celular">
+        <option value="Nevera">
+        <option value="Sonido">
+        <option value="Otro">
+    </datalist>
+    <input type="submit">
+    </form>
     </div>
     <script>
         console.log("mensajito de ITO1");
